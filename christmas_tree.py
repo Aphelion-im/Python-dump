@@ -7,10 +7,13 @@ drawing = [
     [0, 0, 0, 1, 0, 0, 0],
 ]
 
+fill = "*"
+empty = " "
 for row in drawing:
     for x in row:
-        if x == 0:
-            print(" ", end="")
+        if x:
+            print(fill, end="")
         else:
-            print("*", end="")
+            print(empty, end="")
     print("")
+
